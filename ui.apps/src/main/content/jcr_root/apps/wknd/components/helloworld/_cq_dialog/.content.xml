@@ -14,7 +14,7 @@
                     <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Text 1234"
+                        fieldLabel="Text"
                         name="./text"/>
                 </items>
             </column>
