@@ -84,6 +84,19 @@
                             <type>zip</type>
                             <target>/apps/wknd-packages/sample/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.apps</artifactId>
+                            <type>zip</type>
+                            <target>/apps/all-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/all-vendor-packages/content/install</target>
+                        </embedded>
+
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -292,6 +305,23 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>                
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.content</artifactId>
+            <version>5.0.12</version>
+            <type>zip</type>
+            <classifier>min</classifier> <!-- optional, see below -->
+        </dependency>
+
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.apps</artifactId>
+            <version>5.0.12</version>
+            <type>zip</type>
+            <classifier>min</classifier> <!-- optional, see below -->
         </dependency>
     </dependencies>
 </project>

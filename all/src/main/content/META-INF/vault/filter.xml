@@ -17,4 +17,7 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/wknd-packages"/>
     <filter root="/apps/wknd-vendor-packages"/>
+    <filter root="/apps/all-vendor-packages"/>
+
+    
 </workspaceFilter>

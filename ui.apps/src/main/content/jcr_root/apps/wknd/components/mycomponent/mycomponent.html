@@ -1,5 +1,5 @@
 <!--/*
-    Copyright 2015 Adobe Systems Incorporated
+    Copyright 2019 Adobe Systems Incorporated
   
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -13,11 +13,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
-<p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
 
-
-<pre data-sly-use.hello="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
-HelloWorldModel says:
-${hello.message}
-${hello.text}
-</pre>
+<!--/* byline.html */-->
+ 
+ <div data-sly-use.mymodel="com.adobe.aem.guides.wknd.core.models.MyModel"
+ 	  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+ 	  data-sly-test.hasContent="${!mymodel.empty}"   
+      class="cmp-mycustomcomponent">
+     <h2 class="cmp-mycustomcomponent__name">${mymodel.name}</h2>
+     <p class="cmp-mycustomcomponent__occupations">${mymodel.occupations @ join=', '}</p>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
