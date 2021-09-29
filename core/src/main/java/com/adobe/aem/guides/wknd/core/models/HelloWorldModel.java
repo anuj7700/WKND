@@ -21,6 +21,7 @@ import javax.annotation.PostConstruct;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
@@ -46,6 +47,13 @@ public class HelloWorldModel {
 
     private String message;
 
+    private String text;
+
+    public String getText() {
+        return text;
+    }
+
+
     @PostConstruct
     protected void init() {
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
@@ -56,6 +64,8 @@ public class HelloWorldModel {
         message = "Hello World!\n"
             + "Resource type is: " + resourceType + "\n"
             + "Current page is:  " + currentPagePath + "\n";
+
+        text = currentResource.adaptTo(ValueMap.class).get("text","Default Text");
     }
 
     public String getMessage() {
