@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="bf5c9c10-4dd8-4fa0-bda3-518b2fb15a28">
+    <jcr:content
+        cq:name="nespresso"
+        cq:parentPath="/content/dam/wknd/en/portolios"
+        jcr:lastModified="{Date}2021-10-05T09:38:50.658-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Nespresso"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-10-05T09:38:50.658-04:00">
+        <data
+            cq:model="/conf/wknd/settings/dam/cfm/models/portfolio"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                description="Nespresso reaches out customers on the go for their regular caffeine needs with Ranosys mobility and commerce experts."
+                description_x0040_LastModified="{Date}2021-10-05T09:38:50.599-04:00"
+                portfolioImage="/content/dam/wknd/en/portolios/Nesspresso_0.jpg"
+                portfolioImage_x0040_LastModified="{Date}2021-10-05T09:38:50.603-04:00"
+                portfolioLogo="/content/dam/wknd/en/portolios/Nespresso_4_0.png"
+                portfolioLogo_x0040_LastModified="{Date}2021-10-05T09:38:50.601-04:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

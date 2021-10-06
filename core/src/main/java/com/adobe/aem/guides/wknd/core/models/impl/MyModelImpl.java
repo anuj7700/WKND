@@ -80,7 +80,7 @@ public class MyModelImpl implements MyModel {
     @PostConstruct
     private void init() {
         LOGGER.info("Resource path " + resource.getPath());
-        LOGGER.info("Helloworld resource path " + helloWorldResource.getPath());
+        LOGGER.info("Helloworld resource path 123" + helloWorldResource.getPath());
         
        // image = modelFactory.getModelFromWrappedRequest(request, request.getResource(), Image.class);
     }
