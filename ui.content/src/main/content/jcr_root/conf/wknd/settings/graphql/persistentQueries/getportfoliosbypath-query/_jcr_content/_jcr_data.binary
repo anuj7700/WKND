@@ -1,0 +1,23 @@
+query GetPortfoliosListByPath($apath: String!){
+  portfolioListByPath(_path: $apath){
+    item{
+      includedPortfolios {
+        _path
+        _variation
+        description
+        portfolioLogo{
+          ... on ImageRef{
+            _path
+          }
+        }
+        
+        portfolioImage{
+        	... on ImageRef{
+            _path
+          }
+        }
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="9b647077-c9ec-43f2-9ebe-6ca7d90c49d6">
+    <jcr:content
+        cq:name="portfolio-list-adobe"
+        cq:parentPath="/content/dam/wknd/global/en/portolios"
+        jcr:lastModified="{Date}2021-10-05T15:29:23.470-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Portfolio List Adobe"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-10-05T15:29:23.470-04:00">
+        <data
+            cq:model="/conf/wknd/settings/dam/cfm/models/portfolio-list"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                includedPortfolios="[/content/dam/wknd/en/portolios/charles-&amp;-keith,/content/dam/wknd/en/portolios/shell]"
+                includedPortfolios_x0040_LastModified="{Date}2021-10-05T15:29:23.456-04:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

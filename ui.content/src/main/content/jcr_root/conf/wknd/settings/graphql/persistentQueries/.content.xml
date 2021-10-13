@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <adventures-all
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="graphql/persistent/query">
+        <jcr:content
+            jcr:data="{Binary}"
+            jcr:mimeType="text/html"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query/content"/>
+    </adventures-all>
+    <getportfoliosbypath-query
+        jcr:created="{Date}2021-10-05T11:52:11.554-04:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="graphql/persistent/query">
+        <jcr:content
+            jcr:data="{Binary}"
+            jcr:lastModified="{Date}2021-10-05T12:23:55.350-04:00"
+            jcr:mimeType="text/html"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query/content"/>
+    </getportfoliosbypath-query>
+</jcr:root>

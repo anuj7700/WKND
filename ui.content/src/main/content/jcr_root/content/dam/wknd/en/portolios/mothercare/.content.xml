@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="698d7a00-a5dc-4ae1-ab2c-2f1efda44c32">
+    <jcr:content
+        cq:name="mothercare"
+        cq:parentPath="/content/dam/wknd/en/portolios"
+        jcr:lastModified="{Date}2021-10-05T09:40:19.033-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Mothercare"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-10-05T09:40:19.033-04:00">
+        <data
+            cq:model="/conf/wknd/settings/dam/cfm/models/portfolio"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                description="Mothercare helps mummies and babies to start their eternal bond by delivering their needs at doorsteps with Ranosys commerce experts."
+                description_x0040_LastModified="{Date}2021-10-05T09:40:18.977-04:00"
+                portfolioImage="/content/dam/wknd/en/portolios/mothercare-min.jpg"
+                portfolioImage_x0040_LastModified="{Date}2021-10-05T09:40:18.981-04:00"
+                portfolioLogo="/content/dam/wknd/en/portolios/Mothercare_6_0.png"
+                portfolioLogo_x0040_LastModified="{Date}2021-10-05T09:40:18.979-04:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
