@@ -2,9 +2,7 @@
   "supportscredentials":false,
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "POST",
-    "PUT"
+    "POST"
   ],
   "alloworigin":[
     "*"
