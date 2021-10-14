@@ -29,3 +29,6 @@ $include "./default_filters.any"
 
 # Allow to download web manifest for PWA
 /0180 { /type "allow" /extension "webmanifest" }
+
+# Allow HTTP API requests
+/0200 { /type "allow" /method "GET" /url "/api/*" /extension "json"}
