@@ -31,4 +31,4 @@ $include "./default_filters.any"
 /0180 { /type "allow" /extension "webmanifest" }
 
 # Allow HTTP API requests
-/0200 { /type "allow" /method "GET" /url "/api/*" /extension "json"}
+/0200 { /type "allow" /method "GET" /url "/api*" /extension "json"}
