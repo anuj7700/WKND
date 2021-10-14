@@ -18,9 +18,7 @@ jQuery(function ($) {
               url: URL,
               dataType: "json",
               type: "GET",
-              headers: {
-                  "authorization" : "Basic YWRtaW46YWRtaW4="
-              },
+              
               
               success: function(response){
                   
