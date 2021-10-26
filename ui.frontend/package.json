@@ -52,8 +52,10 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "jquery": "^3.4.1",
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "vue": "^2.6.14"
   },
   "browserslist": [
     "last 2 version",

@@ -15,7 +15,10 @@ module.exports = {
             extensions: ['.js', '.ts'],
             plugins: [new TSConfigPathsPlugin({
                 configFile: "./tsconfig.json"
-            })]
+            })],
+            alias: {
+                vue: 'vue/dist/vue.js'
+            }
         },
         entry: {
             site: SOURCE_ROOT + '/site/main.js'

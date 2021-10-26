@@ -1106,9 +1106,16 @@
     
 
 </article>
-<div class="portfolioslist aem-GridColumn aem-GridColumn--default--12">
+<div id="portfoliosListVueApp" class="portfolioslist aem-GridColumn aem-GridColumn--default--12">
     <input type="hidden" name="portfolioslistpath" value="/content/dam/wknd/global/en/portolios/portfolio-list-adobe"></input>
+    <div v-for="portfolio in portfoliosList">
+        <div>
+            <span>{{portfolio.description}}</span>
+            <img :src="portfolio.portfolioImage._path"/>
+        </div>
+    </div>    
 </div>
+
 
     
 </div>
